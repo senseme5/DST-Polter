@@ -59,6 +59,9 @@ local master_postinit = function(inst)
 	-- Hunger rate (optional)
 	inst.components.hunger.hungerrate = 2 * TUNING.WILSON_HUNGER_RATE
 	
+	inst.components.hunger:SetKillRate(10)
+	-- 배고픔 0일때 체력이 1초에 10씩닳는다.
+	
 	inst.components.combat.min_attack_period = 0.2
 	
 	inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED * 1.5)
