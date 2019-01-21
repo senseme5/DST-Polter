@@ -1,6 +1,7 @@
 PrefabFiles = {
 	"polter",
 	"polter_none",
+	"polterknife",
 }
 
 Assets = {
@@ -52,6 +53,9 @@ STRINGS.CHARACTER_QUOTES.polter = "\"I'm Looking for a GOOD WAY TO DIE\""
 
 -- Custom speech strings
 STRINGS.CHARACTERS.POLTER = require "speech_polter"
+
+STRINGS.NAMES.POLTERWEAPON = "Polter's weapon"
+STRINGS.CHARACTERS.POLTER.DESCRIBE.POLTERWEAPON = "It's MINE"
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.POLTER = "Esc"

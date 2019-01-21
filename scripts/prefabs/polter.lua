@@ -8,6 +8,7 @@ local prefabs = {}
 
 -- Custom starting inventory
 local start_inv = {
+	"polterknife"
 }
 
 -- When the character is revived from human
@@ -44,6 +45,7 @@ end
 local master_postinit = function(inst)
 	-- choose which sounds this character will play
 	inst.soundsname = "willow"
+	inst.starting_inventory = start_inv
 	
 	-- Uncomment if "wathgrithr"(Wigfrid) or "webber" voice is used
     --inst.talker_path_override = "dontstarve_DLC001/characters/"
@@ -72,4 +74,4 @@ local master_postinit = function(inst)
 	
 end
 
-return MakePlayerCharacter("polter", prefabs, assets, common_postinit, master_postinit, start_inv)
+return MakePlayerCharacter("polter", prefabs, assets, common_postinit, master_postinit)
