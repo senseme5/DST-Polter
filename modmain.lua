@@ -58,7 +58,7 @@ STRINGS.NAMES.POLTERWEAPON = "Polter's weapon"
 STRINGS.CHARACTERS.POLTER.DESCRIBE.POLTERWEAPON = "It's MINE"
 
 -- The character's name as appears in-game 
-STRINGS.NAMES.POLTER = "Esc"
+STRINGS.NAMES.POLTER = "Polter"
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("polter", "MALE")
