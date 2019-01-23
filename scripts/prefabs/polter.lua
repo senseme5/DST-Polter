@@ -8,6 +8,7 @@ local prefabs = {}
 
 -- Custom starting inventory
 local start_inv = {
+	"polterweapon"
 }
 
 -- When the character is revived from human
@@ -44,7 +45,7 @@ end
 local master_postinit = function(inst)
 	-- choose which sounds this character will play
 	inst.soundsname = "willow"
-	
+	inst.starting_inventory = start_inv
 	-- Uncomment if "wathgrithr"(Wigfrid) or "webber" voice is used
     --inst.talker_path_override = "dontstarve_DLC001/characters/"
 	
@@ -59,6 +60,9 @@ local master_postinit = function(inst)
 	-- Hunger rate (optional)
 	inst.components.hunger.hungerrate = 2 * TUNING.WILSON_HUNGER_RATE
 	
+	inst.components.hunger:SetKillRate(10)
+	-- 배고픔 0일때 체력이 1초에 10씩닳는다.
+	
 	inst.components.combat.min_attack_period = 0.2
 	
 	inst.components.locomotor.walkspeed = (TUNING.WILSON_WALK_SPEED * 1.5)
@@ -69,4 +73,4 @@ local master_postinit = function(inst)
 	
 end
 
-return MakePlayerCharacter("polter", prefabs, assets, common_postinit, master_postinit, start_inv)
+return MakePlayerCharacter("polter", prefabs, assets, common_postinit, master_postinit)

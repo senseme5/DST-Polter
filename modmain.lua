@@ -1,6 +1,7 @@
 PrefabFiles = {
 	"polter",
 	"polter_none",
+	"polterknife",
 }
 
 Assets = {
@@ -50,12 +51,15 @@ STRINGS.CHARACTER_NAMES.polter = "Esc"
 STRINGS.CHARACTER_DESCRIPTIONS.polter = "*Perk 1\n*Perk 2\n*Perk 3"
 STRINGS.CHARACTER_QUOTES.polter = "\"I'm Looking for a GOOD WAY TO DIE\""
 
+
 -- Custom speech strings
 STRINGS.CHARACTERS.POLTER = require "speech_polter"
+
+STRINGS.NAMES.POLTERWEAPON = "polter's weapon"
+STRINGS.CHARACTERS.POLTER.DESCRIBE.POLTERWEAPON = "Its MINE."
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.POLTER = "Esc"
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("polter", "MALE")
-
