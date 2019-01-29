@@ -2374,10 +2374,18 @@ return {
 
         QUAGMIRE_LAMP_SHORT = "Enlightening.",
 
+		-----------------------모드추가
+
+		POLTERWEAPON = "Its MINE.",
+		POLTERCHIP = "POLTERCHIP 조사대사",
+		POLTERCANDY = "POLTERCANDY 조사대사",
+		POLTERCANDY_D = "POLTERCANDY 조사대사",
+		POLTERPACK = "POLTERPACK 조사대사",
     },
     DESCRIBE_GENERIC = "It's a... thing.",
     DESCRIBE_TOODARK = "It's too dark to see!",
     DESCRIBE_SMOLDERING = "That thing is about to catch fire.",
+
     EAT_FOOD =
     {
         TALLBIRDEGG_CRACKED = "Mmm. Beaky.",

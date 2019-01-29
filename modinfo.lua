@@ -2,7 +2,7 @@
 name = "Polter"
 description = "He like potato clip!"
 author = "kuromaguro & dondonrondoncon"
-version = "1.0" -- This is the version of the template. Change it to your own number.
+version = "1.1" -- This is the version of the template. Change it to your own number.
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
@@ -26,7 +26,7 @@ icon = "modicon.tex"
 
 -- The mod's tags displayed on the server list
 server_filter_tags = {
-"character",
+	"character",
 }
 
 --configuration_options = {}

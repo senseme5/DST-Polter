@@ -42,7 +42,7 @@ local common_postinit = function(inst)
 end
 
 local master_postinit = function(inst)
-	inst.soundsname = "willow"
+	inst.soundsname = "wilson"
 	inst.starting_inventory = start_inv
 
 	inst.components.health:SetMaxHealth(300)

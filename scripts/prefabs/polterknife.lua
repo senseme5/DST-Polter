@@ -52,21 +52,21 @@ local function fn()
     inst.components.weapon:SetDamage(TUNING.HAMBAT_DAMAGE)
     --inst.components.weapon:SetOnAttack(UpdateDamage)
 
+    --inst.OnLoad = OnLoad
+
     inst:AddComponent("inspectable")
 
     inst:AddComponent("inventoryitem")
 	inst.components.inventoryitem.atlasname = "images/inventoryimages/polterknife.xml"
 	inst.components.inventoryitem.imagename = "polterknife"
+	
+    MakeHauntableLaunch(inst)
 
     inst:AddComponent("equippable")
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
 
-	MakeHauntableLaunch(inst)
-
-	--inst.OnLoad = OnLoad
-
     return inst
 end
 
-return Prefab( "common/inventory/polterweapon", fn, assets) 
+return Prefab( "polterweapon", fn, assets) 
