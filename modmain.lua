@@ -21,6 +21,8 @@ Assets = {
 	
 	Asset( "IMAGE", "images/map_icons/polter.tex" ),
 	Asset( "ATLAS", "images/map_icons/polter.xml" ),
+	Asset( "IMAGE", "images/map_icons/polterpack.tex" ),
+	Asset( "ATLAS", "images/map_icons/polterpack.xml" ),
 	
 	Asset( "IMAGE", "images/avatars/avatar_polter.tex" ),
     Asset( "ATLAS", "images/avatars/avatar_polter.xml" ),
@@ -39,10 +41,10 @@ Assets = {
 	
     Asset( "IMAGE", "bigportraits/polter_none.tex" ),
     Asset( "ATLAS", "bigportraits/polter_none.xml" ),
-
 }
 
 AddMinimapAtlas("images/map_icons/polter.xml")
+AddMinimapAtlas("images/map_icons/polterpack.xml")
 
 modimport "scripts/strings_polter.lua"
 modimport "scripts/recipes_polter.lua"

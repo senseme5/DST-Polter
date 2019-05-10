@@ -1,7 +1,6 @@
-local assets =
-{
-    --Asset("ANIM", "anim/polterpack.zip"),
-    --Asset("ANIM", "anim/swap_polterpack.zip"),
+local assets = {
+    Asset("ANIM", "anim/polterpack.zip"),
+    Asset("ANIM", "anim/swap_polterpack.zip"),
 	Asset("ANIM", "anim/ui_backpack_2x4.zip"),
 
     Asset("ATLAS", "images/inventoryimages/polterpack.xml"),
@@ -64,7 +63,7 @@ local function onclose(inst)
    inst.SoundEmitter:PlaySound("dontstarve/wendy/backpack_close", "open")
 end
 
-local function fn(Sim)
+local function fn()
    local inst = CreateEntity()
     
     inst.entity:AddTransform()
@@ -75,11 +74,11 @@ local function fn(Sim)
    
 	MakeInventoryPhysics(inst)
     
-    inst.AnimState:SetBank("icepack")
-    inst.AnimState:SetBuild("swap_icepack")
+    inst.AnimState:SetBank("backpack1")
+    inst.AnimState:SetBuild("swap_polterpack")
     inst.AnimState:PlayAnimation("anim")
 
-    inst.MiniMapEntity:SetIcon("icepack.png")
+    inst.MiniMapEntity:SetIcon("polterpack.tex")
     inst:AddTag("backpack")
     inst:AddTag("fridge")
     inst:AddTag("nocool")
@@ -108,7 +107,6 @@ local function fn(Sim)
 	inst:AddComponent("equippable")
 	inst.components.equippable.keepondeath = false
 	inst.components.equippable.equipslot = EQUIPSLOTS.BODY
-	-- 가방을 떨어뜨리게 합니다.
    
 	if EQUIPSLOTS.PACK ~= nil then
 		inst.components.equippable.equipslot = EQUIPSLOTS.PACK
